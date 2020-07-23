@@ -366,6 +366,12 @@ body {
   align-items: center;
 }
 
+.search-section-item-1 > form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .search-section-item-1 input {
   width: 213px;
   height: 25px;
@@ -375,7 +381,14 @@ body {
   background-color: #ffffff;
 }
 
-.search-section-item-1 button img {
+.search-section-item-1 button {
+  width: 24px;
+  height: 24px;
+  padding: 0px;
+  border: none;
+}
+
+.search-section-item-1 img {
   width: 24px;
   height: 24px;
 }
@@ -394,7 +407,6 @@ body {
 }
 
 .search-section-item-2 > div > div:nth-child(1) {
-  width: 52px;
   height: 17px;
   font-family: PingFangSC;
   font-size: 14px;
