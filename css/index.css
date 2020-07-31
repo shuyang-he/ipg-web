@@ -1332,6 +1332,7 @@ td {
     display: flex;
     justify-self: center;
     align-items: center;
+    margin-right: 62px;
   }
 
   #main-page {
