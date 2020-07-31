@@ -681,19 +681,19 @@ body {
 
 .team-line-item-1 {
   width: 1px;
-  height: 108px;
+  height: 150px;
   background-color: #1f40e6;
 }
 
 .team-line-item-2 {
   width: 1px;
-  height: 144px;
+  height: 150px;
   background-color: #1f40e6;
 }
 
 .team-line-item-3 {
   width: 1px;
-  height: 126px;
+  height: 150px;
   background-color: #1f40e6;
 }
 
@@ -705,8 +705,9 @@ body {
 }
 
 .team-item {
+  box-sizing: border-box;
   width: 217px;
-  height: 100px;
+  height: 135px;
   margin-top: 20px;
   padding-bottom: 30px;
   display: flex;
@@ -717,10 +718,6 @@ body {
 .team-content > div.team-item:nth-child(1) {
   margin-top: 0px;
 }
-
-/* .team-content > div.team-item:nth-child(2) {
-  height: 115px;
-} */
 
 .team-subtitle {
   width: 217px;
@@ -741,7 +738,7 @@ body {
 .team-image {
   width: 443px;
   height: 324px;
-  margin-top: 55px;
+  margin-top: 123px;
   margin-left: 54px;
 }
 
@@ -1579,7 +1576,7 @@ td {
   .about-us > div:nth-child(2) {
     width: 853px;
     height: 96px;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 18px;
     font-family: PingFangSC;
     font-size: 14px;
@@ -1722,7 +1719,7 @@ td {
   }
 
   .solution-title > span {
-    height: 24px;
+    height: 28px;
     font-family: PingFangSC;
     font-size: 21px;
     font-weight: 600;
@@ -1768,19 +1765,22 @@ td {
 
   .solution-section > div:nth-child(2) {
     background-image: url("../images/background/背景-灵活用工.png");
+    background-size: 100%;
   }
 
   .solution-section > div:nth-child(3) {
     background-image: url("../images/background/背景-高端人才寻访.png");
+    background-size: 100%;
   }
 
   .solution-section > div:nth-child(4) {
     background-image: url("../images/background/背景招聘流程外包.png");
+    background-size: 100%;
   }
 
   .solution-section-image {
-    width: 200px;
-    height: 150px;
+    width: 344px;
+    height: 258px;
   }
 
   .solution-section > div:nth-child(3) {
@@ -1789,8 +1789,8 @@ td {
   }
 
   .solution-section-image a {
-    width: 200px;
-    height: 150px;
+    width: 344px;
+    height: 258px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1799,8 +1799,8 @@ td {
   }
 
   .solution-section-image-bottom {
-    width: 200px;
-    height: 33px;
+    width: 344px;
+    height: 57px;
     opacity: 0.88;
     background-color: #061520;
     z-index: 1;
@@ -1810,13 +1810,15 @@ td {
   }
 
   .solution-section-image-bottom > img {
-    margin-left: 16px;
-    margin-right: 16px;
+    width: 35px;
+    height: 35px;
+    margin-left: 28px;
+    margin-right: 26px;
   }
 
   .solution-section-image-bottom span {
     font-family: PingFangSC;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
   }
 
@@ -1828,7 +1830,7 @@ td {
   }
 
   .achievement-title > span {
-    height: 24px;
+    height: 28px;
     font-family: PingFangSC;
     font-size: 21px;
     font-weight: 600;
@@ -1868,7 +1870,7 @@ td {
   }
 
   .achievement-item-content {
-    width: 186px;
+    width: 250px;
     height: 34px;
   }
 
@@ -1879,7 +1881,7 @@ td {
   }
 
   .achievement-subtitle > span {
-    width: 186px;
+    width: 250px;
     font-family: PingFangSC;
     font-size: 16px;
     font-weight: 600;
@@ -1893,7 +1895,7 @@ td {
   }
 
   .achievement-subcontent > span {
-    width: 186px;
+    width: 250px;
     font-family: PingFangSC;
     font-size: 14px;
     color: #1d1d1f;
@@ -1907,7 +1909,7 @@ td {
   }
 
   .team-title > span {
-    height: 24px;
+    height: 28px;
     font-family: PingFangSC;
     font-size: 21px;
     font-weight: 600;
@@ -1941,19 +1943,19 @@ td {
 
   .team-line-item-1 {
     width: 1px;
-    height: 109px;
+    height: 166px;
     background-color: #1f40e6;
   }
 
   .team-line-item-2 {
     width: 1px;
-    height: 132px;
+    height: 166px;
     background-color: #1f40e6;
   }
 
   .team-line-item-3 {
     width: 1px;
-    height: 109px;
+    height: 166px;
     background-color: #1f40e6;
   }
 
@@ -1962,10 +1964,12 @@ td {
     display: flex;
     flex-direction: column;
     margin-left: 22px;
+    margin-right: 140px;
   }
 
   .team-item {
-    width: 217px;
+    box-sizing: border-box;
+    width: 318px;
     height: 150px;
     margin-top: 20px;
     padding-bottom: 30px;
@@ -1979,18 +1983,18 @@ td {
   }
 
   .team-subtitle {
-    width: 217px;
+    width: 318px;
     height: 22px;
     margin-bottom: 7px;
     font-family: PingFangSC;
-    font-size: 14px;
+    font-size: 16px;
     color: #1d1d1f;
   }
 
   .team-subcontent {
-    width: 217px;
+    width: 318px;
     font-family: PingFangSC;
-    font-size: 12px;
+    font-size: 14px;
     color: #1d1d1f;
   }
 
@@ -2014,7 +2018,7 @@ td {
   }
 
   .advantage-title > span {
-    height: 24px;
+    height: 28px;
     font-family: PingFangSC;
     font-size: 21px;
     font-weight: 600;
@@ -2104,7 +2108,7 @@ td {
 
   .database-title > span {
     width: 487px;
-    height: 24px;
+    height: 28px;
     font-family: PingFangSC;
     font-size: 21px;
     font-weight: 600;
@@ -2137,7 +2141,7 @@ td {
   }
 
   .database-section > div:nth-child(1) > div {
-    margin-top: 60px;
+    margin-top: 52px;
   }
 
   .database-section > div:nth-child(1) > img {
@@ -2170,7 +2174,7 @@ td {
   }
 
   .client-title > span {
-    height: 24px;
+    height: 28px;
     font-family: PingFangSC;
     font-size: 21px;
     font-weight: 600;
@@ -2200,7 +2204,7 @@ td {
   }
 
   .evaluation-title > span {
-    height: 24px;
+    height: 28px;
     font-family: PingFangSC;
     font-size: 21px;
     font-weight: 600;
