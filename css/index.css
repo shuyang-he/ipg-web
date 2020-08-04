@@ -515,6 +515,7 @@ body {
 
 .close-search-section {
   margin-right: 104px;
+  background-color: transparent;
 }
 
 .close-search-section > img {
@@ -1794,6 +1795,7 @@ td {
 
   .close-search-section {
     margin-right: 133px;
+    background-color: transparent;
   }
 
   .close-search-section > img {
