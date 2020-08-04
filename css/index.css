@@ -46,6 +46,8 @@ body {
 }
 
 .nav-links span {
+  font-family: PingFangSC;
+  font-size: 16px;
   color: #ffffff;
 }
 
@@ -242,7 +244,7 @@ body {
   display: flex;
   align-self: center;
   width: 831px;
-  border: solid 1px #000000;
+  border-top: #000000 solid 1px;
 }
 
 .main-content-2 {
@@ -302,7 +304,7 @@ body {
   width: 570px;
   height: 255px;
   position: absolute;
-  top: 230vh;
+  bottom: -1000px;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -387,13 +389,25 @@ body {
   height: 25px;
   margin-top: 16px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: stretch;
   align-items: center;
+}
+
+.close-search-section {
+  margin-right: 104px;
+}
+
+.close-search-section > img {
+  width: 24px;
+  height: 24px;
 }
 
 .search-section-item-1 > form {
   display: flex;
+  flex-grow: 1;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -1312,6 +1326,8 @@ td {
   }
 
   .nav-links span {
+    font-family: PingFangSC;
+    font-size: 16px;
     color: #ffffff;
   }
 
@@ -1507,8 +1523,7 @@ td {
     display: flex;
     align-self: center;
     width: 1227px;
-    height: 1px;
-    background-color: #000000;
+    border-top: #000000 solid 1px;
   }
 
   .main-content-2 {
@@ -1568,7 +1583,7 @@ td {
     width: 1045px;
     height: 255px;
     position: absolute;
-    top: 220vh;
+    bottom: -1000px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -1652,14 +1667,25 @@ td {
   .search-section-item-1 {
     height: 25px;
     margin-top: 16px;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: stretch;
     align-items: center;
+  }
+
+  .close-search-section {
+    margin-right: 133px;
+  }
+
+  .close-search-section > img {
+    width: 24px;
+    height: 24px;
   }
 
   .search-section-item-1 > form {
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
 
