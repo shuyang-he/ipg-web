@@ -10,6 +10,8 @@ html {
 body {
   margin: auto;
   font-family: PingFangSC;
+  height: 100vh;
+  overflow: auto;
 }
 
 #root {
@@ -1290,6 +1292,7 @@ td {
   body {
     margin: auto;
     font-family: PingFangSC;
+    height: 100%;
   }
 
   #root {

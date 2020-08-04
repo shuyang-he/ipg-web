@@ -19,8 +19,8 @@
       const root = document.querySelector("#root");
       const naviBar = document.querySelector(".navigation");
       const naviBarSpan = document.querySelectorAll(".nav-links span");
-      console.log(root.scrollTop);
-      if (root.scrollTop >= 300) {
+      console.log(document.body.scrollTop);
+      if (document.body.scrollTop >= 300) {
         naviBar.style.backgroundColor = "#ffffff";
         naviBar.style.boxShadow = "0 2px 4px 0 var(--black-50)";
         for (let navLink of naviBarSpan) {
