@@ -1,36 +1,62 @@
 (() => {
   "use strict";
-
-  // function getElementTop(element) {
-  //   var actualTop = element.offsetTop;
-  //   var current = element.offsetParent;
-
-  //   while (current !== null) {
-  //     actualTop += current.offsetTop;
-  //     current = current.offsetParent;
-  //   }
-
-  //   return actualTop;
-  // }
+  let phoneShow = false;
+  let messageShow = false;
 
   window.addEventListener(
     "scroll",
     (event) => {
-      const root = document.querySelector("#root");
-      const naviBar = document.querySelector(".navigation");
-      const naviBarSpan = document.querySelectorAll(".nav-links span");
-      console.log(document.body.scrollTop);
-      if (document.body.scrollTop >= 300) {
-        naviBar.style.backgroundColor = "#ffffff";
-        naviBar.style.boxShadow = "0 2px 4px 0 var(--black-50)";
-        for (let navLink of naviBarSpan) {
-          naviLink.style.color = "#505050";
+      const navBar = document.querySelector(".navigation");
+      const navBarSpan = document.querySelectorAll(".nav-links span");
+      const navLogo = document.querySelector("#main-page");
+      const navWechat = document.querySelector("#wechat > img");
+      const navLinkedIn = document.querySelector("#linkedin > img");
+      if (window.scrollY >= 500) {
+        navLogo.src = "./images/logo/subpage.svg";
+        navWechat.src = "./images/icon/weixin.svg";
+        navLinkedIn.src = "./images/icon/LINKEDIN.svg";
+        navBar.style.backgroundColor = "#ffffff";
+        navBar.style.boxShadow = "0 2px 4px 0 rgba(0, 0, 0, 0.5)";
+        for (let navLink of navBarSpan) {
+          navLink.style.color = "#505050";
         }
       } else {
-        naviBar.style.backgroundColor = "none";
-        for (let navLink of naviBarSpan) {
+        navLogo.src = "./images/logo/mainpage.svg";
+        navWechat.src = "./images/icon/微信icon.svg";
+        navLinkedIn.src = "./images/icon/领英icon.svg";
+        navBar.style.backgroundColor = "transparent";
+        navBar.style.boxShadow = "none";
+        for (let navLink of navBarSpan) {
           navLink.style.color = "#ffffff";
         }
+      }
+    },
+    false
+  );
+
+  document.querySelector("#message-board-phone").addEventListener(
+    "click",
+    (event) => {
+      if (phoneShow) {
+        document.querySelector(".contact").style.display = "none";
+        phoneShow = false;
+      } else {
+        document.querySelector(".contact").style.display = "block";
+        phoneShow = true;
+      }
+    },
+    false
+  );
+
+  document.querySelector("#message-board-message").addEventListener(
+    "click",
+    (event) => {
+      if (messageShow) {
+        document.querySelector(".message").style.display = "none";
+        messageShow = false;
+      } else {
+        document.querySelector(".message").style.display = "block";
+        messageShow = true;
       }
     },
     false
