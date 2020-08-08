@@ -3,11 +3,6 @@
   src: url("../fonts/PingFang-Fonts-master/PingFang\ Regular.ttf");
 }
 
-@font-face {
-  font-family: "TimesNewRomanPS-MT";
-  src: url("../fonts/TimesNewRomanPS/TimesNewRomanPSMT.ttf");
-}
-
 html {
   scroll-behavior: smooth;
 }
