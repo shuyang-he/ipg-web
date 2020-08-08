@@ -1,8 +1,11 @@
 @font-face {
   font-family: "PingFangSC";
-  src: url("./fonts/PingFang-Fonts-master/PingFang\ Regular.ttf");
+  src: url("../fonts/PingFang-Fonts-master/PingFang\ Regular.ttf");
+}
+
+@font-face {
   font-family: "TimesNewRomanPS-MT";
-  src: url("./fonts/TimesNewRomanPSMT.ttf");
+  src: url("../fonts/TimesNewRomanPS/TimesNewRomanPSMT.ttf");
 }
 
 html {
@@ -272,8 +275,6 @@ body {
     #0d2d6f 90%,
     #0e3693 98%
   );
-  /* background-image: url("../images/background/首页背景图.png");
-  background-size: 100%; */
 }
 
 .top-board-content {

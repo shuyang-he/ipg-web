@@ -1,12 +1,11 @@
 @font-face {
   font-family: "PingFangSC";
   src: url("../fonts/PingFang-Fonts-master/PingFang\ Regular.ttf");
-  font-family: "TimesNewRomanPS-MT";
-  src: url("../fonts/TimesNewRomanPSMT.ttf");
 }
 
-* {
-  font-family: PingFangSC;
+@font-face {
+  font-family: "TimesNewRomanPS-MT";
+  src: url("../fonts/TimesNewRomanPS/TimesNewRomanPSMT.ttf");
 }
 
 html {
