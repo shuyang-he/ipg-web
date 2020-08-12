@@ -1,0 +1,285 @@
+@font-face {
+  font-family: "PingFangSC";
+  src: url("../fonts/PingFang-Fonts-master/PingFang\ Regular.ttf");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  font-family: PingFangSC;
+  height: 100vh;
+  overflow: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 7091px;
+  background-color: #ffffff;
+}
+
+#navigation {
+  width: 100%;
+  height: 83px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  z-index: 9;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-left: 74px;
+}
+
+.nav-links a {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-left: 25px;
+  text-decoration: none;
+}
+
+.nav-links span {
+  font-family: PingFangSC;
+  font-size: 16px;
+  color: #505050;
+}
+
+.nav-links a:hover {
+  border-bottom: #4272d7 solid 8px;
+  border-top: #ffffff solid 8px;
+}
+
+.nav-links span:hover {
+  color: #4272d7;
+}
+
+.nav-addition {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav-addition a {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-addition img {
+  width: 24px;
+  height: 24px;
+}
+
+#wechat {
+  margin-right: 25px;
+}
+
+#linkedin {
+  margin-right: 76px;
+}
+
+.main-page-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-right: 97px;
+}
+
+#main-page {
+  width: 105px;
+  height: 45px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+  background-image: url("../images/background/footer背景.png");
+  background-size: 100%;
+}
+
+.footer-section {
+  margin: auto;
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  height: 65px;
+  margin-bottom: 6px;
+}
+
+.footer-logo > img {
+  width: 150px;
+  height: 65px;
+}
+
+.footer-line {
+  display: flex;
+  align-self: center;
+  width: 1000px;
+  border: solid 1px #ffffff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  margin-bottom: 200px;
+}
+
+.footer-follow {
+  display: flex;
+  flex-direction: column;
+  margin-right: 156px;
+}
+
+.footer-follow-title {
+  margin-bottom: 24px;
+}
+
+.footer-follow-title > span {
+  font-family: PingFangSC;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-follow-row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 27px;
+}
+
+.footer-follow-item {
+  margin-right: 28px;
+}
+
+.footer-solution {
+  display: flex;
+  flex-direction: column;
+  margin-right: 81px;
+}
+
+.footer-solution-title {
+  margin-bottom: 24px;
+}
+
+.footer-solution-title > span {
+  font-family: PingFangSC;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-solution-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-solution-content span {
+  font-family: PingFangSC;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+}
+
+.footer-observe {
+  display: flex;
+  flex-direction: column;
+  margin-right: 43px;
+}
+
+.footer-observe-title {
+  margin-bottom: 24px;
+}
+
+.footer-observe-title > span {
+  font-family: PingFangSC;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-observe-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-observe-content span {
+  font-family: PingFangSC;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+}
+
+.footer-news {
+  display: flex;
+  flex-direction: column;
+  margin-right: 112px;
+}
+
+.footer-news-title {
+  margin-bottom: 24px;
+}
+
+.footer-news-title > span {
+  font-family: PingFangSC;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-news-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-news-content span {
+  font-family: PingFangSC;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+}
+
+.footer-about {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.footer-about-title {
+  margin-bottom: 24px;
+}
+
+.footer-about-title > span {
+  font-family: PingFangSC;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.footer-about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-about-content span {
+  font-family: PingFangSC;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #ffffff;
+}
