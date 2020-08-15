@@ -6,8 +6,8 @@
   window.addEventListener(
     "scroll",
     (event) => {
-      const navBar = document.querySelector(".navigation");
-      const navBarSpan = document.querySelectorAll(".nav-links span");
+      const navBar = document.querySelector("#navigation");
+      const navBarSpan = document.querySelectorAll("#nav-links span");
       const navLogo = document.querySelector("#main-page");
       const navWechat = document.querySelector("#wechat > img");
       const navLinkedIn = document.querySelector("#linkedin > img");
