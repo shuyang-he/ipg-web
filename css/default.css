@@ -142,3 +142,8 @@ li {
   justify-content: center;
   align-items: center;
 }
+
+button {
+  border: none;
+  padding: 0px;
+}

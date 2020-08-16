@@ -2,6 +2,7 @@
   "use strict";
   let phoneShow = false;
   let messageShow = false;
+  let showNavBanner = false;
 
   window.addEventListener(
     "scroll",
@@ -33,6 +34,67 @@
     },
     false
   );
+
+  document.querySelector("#nav-icon-open").addEventListener(
+    "click",
+    (event) => {
+      const navBanner = document.querySelector("#nav-banner");
+      const navBar = document.querySelector("#navigation");
+      const navWrap = document.querySelector("#navigation-wrap");
+      const navLogoCon = document.querySelector("#main-page-container");
+      const navLinks = document.querySelector("#nav-links");
+      const navAddition = document.querySelector("#nav-addition");
+      const navIconOpen = document.querySelector("#nav-icon-open");
+      const navBarSpan = document.querySelectorAll("#nav-links span");
+      const navLogo = document.querySelector("#main-page");
+      const navWechat = document.querySelector("#wechat > img");
+      const navLinkedIn = document.querySelector("#linkedin > img");
+
+      if (showNavBanner) {
+        navBanner.style.display = "none";
+        showNavBanner = false;
+      } else {
+        navBanner.style.display = "block";
+        showNavBanner = true;
+      }
+
+      navBar.style.width = "300px";
+      navBar.style.height = "100%";
+      navBar.style.backgroundColor = "#ffffff";
+      navBar.style.right = "0px";
+
+      navWrap.style.flexDirection = "column";
+      navWrap.style.height = "100%";
+
+      navLogoCon.style.flexBasis = "10%";
+
+      navAddition.style.display = "flex";
+      navAddition.style.flexBasis = "10%";
+
+      navLinks.style.display = "flex";
+      navLinks.style.flexDirection = "column";
+      navLinks.style.flexBasis = "50%";
+      navLinks.style.justifyContent = "space-around";
+      navLinks.style.alignItems = "start";
+
+      navIconOpen.style.display = "none";
+
+      navLogo.src = "./images/logo/subpage.svg";
+
+      navWechat.src = "./images/icon/weixin.svg";
+
+      navLinkedIn.src = "./images/icon/LINKEDIN.svg";
+
+      for (let navLink of navBarSpan) {
+        navLink.style.color = "#505050";
+      }
+    },
+    false
+  );
+
+  document
+    .querySelector("#nav-banner")
+    .addEventListener("click", (event) => {}, false);
 
   document.querySelector("#message-board-phone").addEventListener(
     "click",
