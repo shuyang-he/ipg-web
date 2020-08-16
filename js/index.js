@@ -10,10 +10,12 @@
       const navBar = document.querySelector("#navigation");
       const navBarSpan = document.querySelectorAll("#nav-links span");
       const navLogo = document.querySelector("#main-page");
+      const navIcon = document.querySelector("#nav-icon img");
       const navWechat = document.querySelector("#wechat > img");
       const navLinkedIn = document.querySelector("#linkedin > img");
       if (window.scrollY >= 500) {
         navLogo.src = "./images/logo/subpage.svg";
+        navIcon.src = "./images/icon/open-menu-black.svg";
         navWechat.src = "./images/icon/weixin.svg";
         navLinkedIn.src = "./images/icon/LINKEDIN.svg";
         navBar.style.backgroundColor = "#ffffff";
@@ -23,6 +25,7 @@
         }
       } else {
         navLogo.src = "./images/logo/mainpage.svg";
+        navIcon.src = "./images/icon/open-menu-white.svg";
         navWechat.src = "./images/icon/微信icon.svg";
         navLinkedIn.src = "./images/icon/领英icon.svg";
         navBar.style.backgroundColor = "transparent";
@@ -40,54 +43,39 @@
     (event) => {
       const navBanner = document.querySelector("#nav-banner");
       const navBar = document.querySelector("#navigation");
-      const navWrap = document.querySelector("#navigation-wrap");
-      const navLogoCon = document.querySelector("#main-page-container");
-      const navLinks = document.querySelector("#nav-links");
-      const navAddition = document.querySelector("#nav-addition");
-      const navIconOpen = document.querySelector("#nav-icon-open");
-      const navBarSpan = document.querySelectorAll("#nav-links span");
-      const navLogo = document.querySelector("#main-page");
-      const navWechat = document.querySelector("#wechat > img");
-      const navLinkedIn = document.querySelector("#linkedin > img");
+      const sideNavBar = document.querySelector("#side-navigation");
 
-      if (showNavBanner) {
-        navBanner.style.display = "none";
-        showNavBanner = false;
-      } else {
-        navBanner.style.display = "block";
-        showNavBanner = true;
-      }
+      navBanner.style.display = "block";
+      navBar.style.display = "none";
+      sideNavBar.style.display = "flex";
+    },
+    false
+  );
 
-      navBar.style.width = "300px";
-      navBar.style.height = "100%";
-      navBar.style.backgroundColor = "#ffffff";
-      navBar.style.right = "0px";
+  document.querySelector("#side-nav-icon-close").addEventListener(
+    "click",
+    (event) => {
+      const navBanner = document.querySelector("#nav-banner");
+      const navBar = document.querySelector("#navigation");
+      const sideNavBar = document.querySelector("#side-navigation");
 
-      navWrap.style.flexDirection = "column";
-      navWrap.style.height = "100%";
+      navBanner.style.display = "none";
+      navBar.style.display = "flex";
+      sideNavBar.style.display = "none";
+    },
+    false
+  );
 
-      navLogoCon.style.flexBasis = "10%";
+  document.querySelector("#nav-banner").addEventListener(
+    "click",
+    (event) => {
+      const navBanner = document.querySelector("#nav-banner");
+      const navBar = document.querySelector("#navigation");
+      const sideNavBar = document.querySelector("#side-navigation");
 
-      navAddition.style.display = "flex";
-      navAddition.style.flexBasis = "10%";
-
-      navLinks.style.display = "flex";
-      navLinks.style.flexDirection = "column";
-      navLinks.style.flexBasis = "50%";
-      navLinks.style.justifyContent = "space-around";
-      navLinks.style.alignItems = "start";
-
-      navIconOpen.style.display = "none";
-
-      navLogo.src = "./images/logo/subpage.svg";
-
-      navWechat.src = "./images/icon/weixin.svg";
-
-      navLinkedIn.src = "./images/icon/LINKEDIN.svg";
-
-      for (let navLink of navBarSpan) {
-        navLink.style.color = "#505050";
-      }
+      navBanner.style.display = "none";
+      navBar.style.display = "flex";
+      sideNavBar.style.display = "none";
     },
     false
   );
