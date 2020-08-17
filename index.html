@@ -18,6 +18,21 @@
     />
     <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="./js/index.js" defer></script>
     <title>ipg中文网站</title>
   </head>
@@ -30,46 +45,263 @@
           </div>
           <ul id="nav-links">
             <li>
-              <a href="#home">
-                <span>首页</span>
+              <a id="nav-links-home" href="#home">
+                <span class="g-font g-t3 g-t-white">首页</span>
               </a>
-              <ul></ul>
+              <ul id="nav-links-home-drop" class="nav-drop container">
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">灵活用工</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">高端人才寻访</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">招聘流程外包</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">海外校招</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">出海解决方案</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">管理咨询</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#solution">
-                <span>解决方案</span>
+              <a id="nav-links-solution" href="#solution">
+                <span class="g-font g-t3 g-t-white">解决方案</span>
               </a>
-              <ul></ul>
+              <ul id="nav-links-solution-drop" class="nav-drop container">
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">灵活用工</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">高端人才寻访</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">招聘流程外包</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">海外校招</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">出海解决方案</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">管理咨询</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#jobs">
-                <span>热门职位</span>
+              <a id="nav-links-jobs" href="#jobs">
+                <span class="g-font g-t3 g-t-white">热门职位</span>
               </a>
-              <ul></ul>
+              <ul id="nav-links-jobs-drop" class="nav-drop container">
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">灵活用工</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">高端人才寻访</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">招聘流程外包</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">海外校招</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">出海解决方案</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">管理咨询</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#business">
-                <span>行业洞察</span>
+              <a id="nav-links-business" href="#business">
+                <span class="g-font g-t3 g-t-white">行业洞察</span>
               </a>
-              <ul></ul>
+              <ul id="nav-links-business-drop" class="nav-drop container">
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">灵活用工</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">高端人才寻访</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">招聘流程外包</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">海外校招</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">出海解决方案</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">管理咨询</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#education">
-                <span>留学生在线教育平台</span>
+              <a id="nav-links-education" href="#education">
+                <span class="g-font g-t3 g-t-white">留学生在线教育平台</span>
               </a>
-              <ul></ul>
+              <ul id="nav-links-education-drop" class="nav-drop container">
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">灵活用工</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">高端人才寻访</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">招聘流程外包</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">海外校招</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">出海解决方案</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">管理咨询</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#news">
-                <span>新闻动态</span>
+              <a id="nav-links-news" href="#news">
+                <span class="g-font g-t3 g-t-white">新闻动态</span>
               </a>
-              <ul></ul>
+              <ul id="nav-links-news-drop" class="nav-drop container">
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">灵活用工</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">高端人才寻访</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">招聘流程外包</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">海外校招</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">出海解决方案</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">管理咨询</span>
+                  </a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a href="#about-us">
-                <span>关于我们</span>
+              <a id="nav-links-about-us" href="#about-us">
+                <span class="g-font g-t3 g-t-white">关于我们</span>
               </a>
-              <ul></ul>
+              <ul id="nav-links-about-us-drop" class="nav-drop container">
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">灵活用工</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">高端人才寻访</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">招聘流程外包</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">海外校招</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">出海解决方案</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#test" class="nav-drop-link">
+                    <span class="g-font g-t4 g-t-white">管理咨询</span>
+                  </a>
+                </li>
+              </ul>
             </li>
           </ul>
           <div id="nav-addition">
@@ -88,7 +320,7 @@
         </div>
       </div>
       <div id="nav-banner"></div>
-      <div id="side-navigation">
+      <div id="side-navigation" class="container">
         <div id="side-main-page-container">
           <img src="./images/logo/subpage.svg" />
           <button id="side-nav-icon-close">
@@ -98,37 +330,39 @@
         <ul id="side-nav-links">
           <li>
             <a href="#home">
-              <span>首页</span>
+              <span class="g-font g-t3 g-t-light-black">首页</span>
             </a>
           </li>
           <li>
             <a href="#solution">
-              <span>解决方案</span>
+              <span class="g-font g-t3 g-t-light-black">解决方案</span>
             </a>
           </li>
           <li>
             <a href="#jobs">
-              <span>热门职位</span>
+              <span class="g-font g-t3 g-t-light-black">热门职位</span>
             </a>
           </li>
           <li>
             <a href="#business">
-              <span>行业洞察</span>
+              <span class="g-font g-t3 g-t-light-black">行业洞察</span>
             </a>
           </li>
           <li>
             <a href="#education">
-              <span>留学生在线教育平台</span>
+              <span class="g-font g-t3 g-t-light-black"
+                >留学生在线教育平台</span
+              >
             </a>
           </li>
           <li>
             <a href="#news">
-              <span>新闻动态</span>
+              <span class="g-font g-t3 g-t-light-black">新闻动态</span>
             </a>
           </li>
           <li>
             <a href="#about-us">
-              <span>关于我们</span>
+              <span class="g-font g-t3 g-t-light-black">关于我们</span>
             </a>
           </li>
         </ul>
@@ -141,7 +375,7 @@
           </a>
         </div>
       </div>
-      <ul class="message-board">
+      <ul id="message-board">
         <li class="message-board-item" id="message-board-phone">
           <a href="#phone">
             <img src="./images/message board/phone.svg" />
@@ -158,621 +392,548 @@
           </a>
         </li>
       </ul>
-      <div class="contact">
+      <div id="contact" class="container">
+        <p class="g-font g-t3 g-t-dark-black">服务热线：</p>
         <div>
-          <span>服务热线：</span>
-        </div>
-        <div>
-          <div>
-            <span class="contact-country">美国: </span>
-            <span class="contact-phone-number">+1 (408) 200 - 9891</span>
-            <span class="contact-country">中国: </span>
-            <span class="contact-phone-number">0755 - 26995401</span>
-            <span class="contact-country">英国: </span>
-            <span class="contact-phone-number">＋44(0)7985130519</span>
-          </div>
+          <p class="g-font g-t4 g-t-blue">美国:</p>
+          <p class="g-font g-t4 g-t-dark-black">
+            +1 (408) 200 - 9891
+          </p>
+          <p class="g-font g-t4 g-t-blue">中国:</p>
+          <p class="g-font g-t4 g-t-dark-black">
+            0755 - 26995401
+          </p>
+          <p class="g-font g-t4 g-t-blue">英国:</p>
+          <p class="g-font g-t4 g-t-dark-black">
+            ＋44(0)7985130519
+          </p>
         </div>
       </div>
-      <div class="message">
-        <div>
-          <span>请您留言：</span>
-        </div>
+      <div id="message" class="container">
+        <p class="g-font g-t3 g-t-dark-black">请您留言：</p>
         <form>
           <textarea
             type="text"
             placeholder="请在此输入留言内容，我们会尽快联系您（必填）"
+            class="g-font g-t6"
           ></textarea>
-          <input type="text" placeholder="姓名" />
-          <input type="text" placeholder="电话（必填）" />
-          <input type="text" placeholder="邮箱" />
-          <button>
+          <input type="text" placeholder="姓名" class="g-font g-t6" />
+          <input type="text" placeholder="电话（必填）" class="g-font g-t6" />
+          <input type="text" placeholder="邮箱" class="g-font g-t6" />
+          <button type="submit" class="g-font g-t6">
             提交
           </button>
         </form>
       </div>
-      <div class="top-board" id="top">
-        <div class="top-board-content">
-          <div class="top-board-items">
+      <div id="search-section">
+        <div id="search-section-item-1" class="container">
+          <form>
+            <input
+              type="text"
+              placeholder="搜索职位名称、工作地点"
+              class="g-font g-t5"
+            />
+            <button type="submit">
+              <img src="./images/icon/搜索.svg" />
+            </button>
+          </form>
+          <button id="close-search-section">
+            <img src="./images/icon/x.svg" />
+          </button>
+        </div>
+        <div id="search-section-item-2" class="container">
+          <p class="g-font g-t4 g-t-white">热门职位</p>
+          <div id="jobs">
+            <p class="g-font g-t5 g-t-white">财务总监</p>
+            <p class="g-font g-t5 g-t-white">财务副总监</p>
+            <p class="g-font g-t5 g-t-white">EHS Manager</p>
+            <p class="g-font g-t5 g-t-white">医疗健康服务负责人</p>
+            <p class="g-font g-t5 g-t-white">海外业务总经理</p>
+            <p class="g-font g-t5 g-t-white">高级解决方案工程师</p>
+          </div>
+        </div>
+      </div>
+      <div id="top-board" id="top">
+        <div id="top-board-content" class="container">
+          <p class="g-font g-t1 g-t-white">
             英特利普集团<br />
             全球综合人才解决方案供应商
-          </div>
-          <div class="top-board-items">
+          </p>
+          <p class="g-font g-t3 g-t-white">
             IntelliPro Group Inc.<br />
             Global Integrated Talent Solution Provider
-          </div>
-          <div class="top-board-items">
-            <a href="#contact">
-              <div>
-                <span>联系我们</span>
-              </div>
+          </p>
+          <div>
+            <a href="#contact" class="main-link">
+              <p class="g-font g-t4 g-t-white">联系我们</p>
               <img src="./images/icon/箭头.svg" />
             </a>
           </div>
         </div>
       </div>
-      <div class="main-content-1">
-        <div class="main-content-1-items">
+      <div id="main-content-1" class="container">
+        <p class="g-font g-t2 g-t-dark-black">
           北美最大以及服务最完善的双语综合人力资源服务公司
-        </div>
-        <div class="main-content-1-items">
-          <a href="#learn-more">
-            <div>
-              <span>了解更多</span>
-            </div>
+        </p>
+        <div>
+          <a href="#learn-more" class="main-link">
+            <p class="g-font g-t4 g-t-dark-black">了解更多</p>
             <img src="./images/icon/箭头.svg" />
           </a>
         </div>
       </div>
-      <div class="line"></div>
-      <div class="main-content-2">
-        <div class="main-content-2-items">
-          <div>
-            <span>2009</span>
+      <div class="line container"></div>
+      <div class="container">
+        <div id="main-content-2" class="row">
+          <div class="main-content-2-items col-6 col-md-3">
+            <p>2009</p>
+            <p class="g-font g-t3 g-t-dark-black">成立于美国硅谷</p>
           </div>
-          <div>
-            <span>
-              成立于美国硅谷
-            </span>
+          <div class="main-content-2-items col-6 col-md-3">
+            <p>20+</p>
+            <p class="g-font g-t3 g-t-dark-black">分支机构</p>
           </div>
-        </div>
-        <div class="main-content-2-items">
-          <div>
-            <span>20+</span>
+          <div class="main-content-2-items col-6 col-md-3">
+            <p>100+</p>
+            <p class="g-font g-t3 g-t-dark-black">资深顾问</p>
           </div>
-          <div>
-            <span>
-              分支机构
-            </span>
-          </div>
-        </div>
-        <div class="main-content-2-items">
-          <div>
-            <span>100+</span>
-          </div>
-          <div>
-            <span>
-              资深顾问
-            </span>
-          </div>
-        </div>
-        <div class="main-content-2-items">
-          <div>
-            <span>1,000+</span>
-          </div>
-          <div>
-            <span>
-              客户
-            </span>
+          <div class="main-content-2-items col-6 col-md-3">
+            <p>1,000+</p>
+            <p class="g-font g-t3 g-t-dark-black">客户</p>
           </div>
         </div>
       </div>
-      <div class="about-us-image">
+      <div id="about-us-image" class="container">
         <img src="./images/background/背景图-关于我们.png" />
       </div>
-      <div class="about-us">
-        <div>
-          <span>关于我们</span>
-        </div>
-        <div>
-          <p>
-            英特利普集团创立于2009年，总部位于美国硅谷，是一家以科技数据驱动的顶尖人才生态管理咨
-            询及人力资源解决方案供应商。
-          </p>
-          <p>
-            集团致力于打造全球高端人才生态平台，通过结合硅谷以及世界顶尖人才的智慧与经验，在全球化
-            时代下，为企业赋予增长动力，提供发展战略管理咨询以及全球人力资源服务。
-          </p>
-        </div>
-        <div>
-          <a href="#learn-more">
-            <div>
-              <span>了解更多</span>
-            </div>
-            <img src="./images/icon/箭头.svg" />
-          </a>
-        </div>
-      </div>
-      <div class="search-section">
-        <div class="search-section-item-1">
-          <form>
-            <input type="text" placeholder="搜索职位名称、工作地点" />
-            <button type="submit">
-              <img src="./images/icon/搜索.svg" />
-            </button>
-          </form>
-          <button class="close-search-section">
-            <img src="./images/icon/x.svg" />
-          </button>
-        </div>
-        <div class="search-section-item-2">
+      <div class="container">
+        <div id="about-us" class="container">
+          <p class="main-title g-font g-t3 g-t-dark-black">关于我们</p>
           <div>
-            <div>
-              <span>热门职位</span>
-            </div>
-            <div class="jobs">
-              <div>
-                <span>财务总监</span>
-              </div>
-              <div>
-                <span>财务副总监</span>
-              </div>
-              <div>
-                <span>EHS Manager</span>
-              </div>
-              <div>
-                <span>医疗健康服务负责人</span>
-              </div>
-              <div>
-                <span>海外业务总经理</span>
-              </div>
-              <div>
-                <span>高级解决方案工程师</span>
-              </div>
-            </div>
+            <p class="g-font g-t5 g-t-dark-black">
+              英特利普集团创立于2009年，总部位于美国硅谷，是一家以科技数据驱动的顶尖人才生态管理咨
+              询及人力资源解决方案供应商。
+            </p>
+            <p class="g-font g-t5 g-t-dark-black">
+              集团致力于打造全球高端人才生态平台，通过结合硅谷以及世界顶尖人才的智慧与经验，在全球化
+              时代下，为企业赋予增长动力，提供发展战略管理咨询以及全球人力资源服务。
+            </p>
+          </div>
+          <div>
+            <a href="#learn-more" class="main-link">
+              <p class="g-font g-t4 g-t-dark-black">了解更多</p>
+              <img src="./images/icon/箭头.svg" />
+            </a>
           </div>
         </div>
       </div>
-      <div class="solution-title">
-        <span>解决方案</span>
+      <div class="main-title-con" class="container">
+        <p class="main-title g-font g-t3 g-t-dark-black">解决方案</p>
       </div>
-      <div class="solution-section">
-        <div class="turn-page prev">
+      <div id="solution-section" class="container">
+        <div class="turn-page">
           <a href="#prev">
             <img src="./images/icon/滑动左.svg" />
           </a>
         </div>
-        <div class="solution-section-image">
-          <a href="#灵活用工">
-            <div class="solution-section-image-bottom">
-              <img src="./images/icon/灵活用工.svg" />
-              <span>灵活用工</span>
+        <div id="solution-content" class="row">
+          <div class="col-12 col-lg-4">
+            <div id="solution-flexible-con" class="solution-section-image">
+              <a href="#灵活用工" id="solution-flexible">
+                <div class="solution-section-image-bottom">
+                  <img src="./images/icon/灵活用工.svg" />
+                  <span class="g-font g-t5 g-t-white">灵活用工</span>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="solution-section-image">
-          <a href="#人才寻访">
-            <div class="solution-section-image-bottom">
-              <img src="./images/icon/高端人才寻访.svg" />
-              <span>高端人才寻访</span>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div id="solution-talent-con" class="solution-section-image">
+              <a href="#人才寻访" id="solution-talent">
+                <div class="solution-section-image-bottom">
+                  <img src="./images/icon/高端人才寻访.svg" />
+                  <span class="g-font g-t5 g-t-white">高端人才寻访</span>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="solution-section-image">
-          <a href="#招聘外包">
-            <div class="solution-section-image-bottom">
-              <img src="./images/icon/招聘流程外包.svg" />
-              <span>招聘流程外包</span>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div id="solution-vendor-con" class="solution-section-image">
+              <a href="#招聘外包" id="solution-vendor">
+                <div class="solution-section-image-bottom">
+                  <img src="./images/icon/招聘流程外包.svg" />
+                  <span class="g-font g-t5 g-t-white">招聘流程外包</span>
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="turn-page next">
+        <div class="turn-page">
           <a href="#next">
             <img src="./images/icon/滑动右.svg" />
           </a>
         </div>
       </div>
-      <div class="line"></div>
-      <div class="achievement-title">
-        <span>傲人成绩</span>
+      <div class="line container"></div>
+      <div class="main-title-con" class="container">
+        <p class="main-title g-font g-t3 g-t-dark-black">傲人成绩</p>
       </div>
-      <div class="achievement-section">
-        <div class="achievement-row">
-          <div class="achievement-item">
+      <div class="container">
+        <div class="row">
+          <div class="achievement-item col-12 col-md-6 col-lg-4">
             <img src="./images/icon/骄人成绩icon.svg" />
             <div class="achievement-item-content">
-              <div class="achievement-subtitle">
-                <span>人力资源沙龙</span>
-              </div>
-              <div class="achievement-subcontent">
-                <span>人力资源沙龙最佳海外人力资源服务机构</span>
-              </div>
+              <p class="g-font g-t5 g-t-dark-black">
+                人力资源沙龙
+              </p>
+              <p class="g-font g-t6 g-t-dark-black">
+                人力资源沙龙最佳海外人力资源服务机构
+              </p>
             </div>
           </div>
-          <div class="achievement-item">
+          <div class="achievement-item col-12 col-md-6 col-lg-4">
             <img src="./images/icon/骄人成绩icon.svg" />
             <div class="achievement-item-content">
-              <div class="achievement-subtitle">
-                <span>LinkedIn</span>
-              </div>
-              <div class="achievement-subcontent">
-                <span>2017年MSP计划服务商第二名</span>
-              </div>
+              <p class="g-font g-t5 g-t-dark-black">
+                LinkedIn
+              </p>
+              <p class="g-font g-t6 g-t-dark-black">
+                2017年MSP计划服务商第二名
+              </p>
             </div>
           </div>
-          <div class="achievement-item">
+          <div class="achievement-item col-12 col-md-6 col-lg-4">
             <img src="./images/icon/骄人成绩icon.svg" />
             <div class="achievement-item-content">
-              <div class="achievement-subtitle">
-                <span>谷歌</span>
-              </div>
-              <div class="achievement-subcontent">
-                <span>2018年MSP计划人力资源服务商第一名</span>
-              </div>
+              <p class="g-font g-t5 g-t-dark-black">
+                谷歌
+              </p>
+              <p class="g-font g-t6 g-t-dark-black">
+                2018年MSP计划人力资源服务商第一名
+              </p>
             </div>
           </div>
-        </div>
-        <div class="achievement-row">
-          <div class="achievement-item">
+          <div class="achievement-item col-12 col-md-6 col-lg-4">
             <img src="./images/icon/骄人成绩icon.svg" />
             <div class="achievement-item-content">
-              <div class="achievement-subtitle">
-                <span>华为北美</span>
-              </div>
-              <div class="achievement-subcontent">
-                <span>2018年谷歌MSP计划人力资源服务商排名第一名</span>
-              </div>
+              <p class="g-font g-t5 g-t-dark-black">
+                华为北美
+              </p>
+              <p class="g-font g-t6 g-t-dark-black">
+                2018年谷歌MSP计划人力资源服务商排名第一名
+              </p>
             </div>
           </div>
-          <div class="achievement-item">
+          <div class="achievement-item col-12 col-md-6 col-lg-4">
             <img src="./images/icon/骄人成绩icon.svg" />
             <div class="achievement-item-content">
-              <div class="achievement-subtitle">
-                <span>LinkedIn</span>
-              </div>
-              <div class="achievement-subcontent">
-                <span>2018年MSP计划人力资源服务商第二名</span>
-              </div>
+              <p class="g-font g-t5 g-t-dark-black">
+                LinkedIn
+              </p>
+              <p class="g-font g-t6 g-t-dark-black">
+                2018年MSP计划人力资源服务商第二名
+              </p>
             </div>
           </div>
-          <div class="achievement-item">
+          <div class="achievement-item col-12 col-md-6 col-lg-4">
             <img src="./images/icon/骄人成绩icon.svg" />
             <div class="achievement-item-content">
-              <div class="achievement-subtitle">
-                <span>阿里巴巴</span>
-              </div>
-              <div class="achievement-subcontent">
-                <span>2017年评为最佳人力资源服务商和最具潜力的猎头机构</span>
-              </div>
+              <p class="g-font g-t5 g-t-dark-black">
+                阿里巴巴
+              </p>
+              <p class="g-font g-t6 g-t-dark-black">
+                2017年评为最佳人力资源服务商和最具潜力的猎头机构
+              </p>
             </div>
           </div>
-        </div>
-        <div class="achievement-row">
-          <div class="achievement-item">
+          <div class="achievement-item col-12 col-md-6 col-lg-4">
             <img src="./images/icon/骄人成绩icon.svg" />
             <div class="achievement-item-content">
-              <div class="achievement-subtitle">
-                <span>jd.com</span>
-              </div>
-              <div class="achievement-subcontent">
-                <span>评为北美top人力资源服务商</span>
-              </div>
+              <p class="g-font g-t5 g-t-dark-black">
+                jd.com
+              </p>
+              <p class="g-font g-t6 g-t-dark-black">
+                评为北美top人力资源服务商
+              </p>
             </div>
           </div>
-          <div class="achievement-item">
+          <div class="achievement-item col-12 col-md-6 col-lg-4">
             <img src="./images/icon/骄人成绩icon.svg" />
             <div class="achievement-item-content">
-              <div class="achievement-subtitle">
-                <span>谷歌</span>
-              </div>
-              <div class="achievement-subcontent">
-                <span>2017年MSP计划服务商第一名</span>
-              </div>
+              <p class="g-font g-t5 g-t-dark-black">
+                谷歌
+              </p>
+              <p class="g-font g-t6 g-t-dark-black">
+                2017年MSP计划服务商第一名
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="line"></div>
-      <div class="team-title">
-        <span>精英团队</span>
+      <div class="line container"></div>
+      <div class="main-title-con" class="container">
+        <p class="main-title g-font g-t3 g-t-dark-black">精英团队</p>
       </div>
-      <div class="team-section">
-        <div class="team-lines">
-          <div class="team-point"></div>
-          <div class="team-line-item-1"></div>
-          <div class="team-point"></div>
-          <div class="team-line-item-2"></div>
-          <div class="team-point"></div>
-          <div class="team-line-item-3"></div>
-          <div class="team-point"></div>
-        </div>
-        <div class="team-content">
-          <div class="team-item">
-            <div class="team-subtitle">
-              <span>01</span>
-            </div>
-            <div class="team-subcontent">
-              <span>
+      <div class="container">
+        <div id="team-section" class="row">
+          <ul id="team-content" class="col-12 col-md-5">
+            <li class="team-item">
+              <p class="g-font g-t4 g-t-dark-black">01</p>
+              <p class="g-font g-t5 g-t-dark-black">
                 北美最大以及服务最完善的双语综合人力资源服务公司。
-              </span>
-            </div>
-          </div>
-          <div class="team-item">
-            <div class="team-subtitle">
-              <span>02</span>
-            </div>
-            <div class="team-subcontent">
-              <span>
-                英特利普集团总部位于美国硅谷，并在纽约，西雅图，温哥华，北京，上海，深圳，武汉，
-                新德里等城市均设有分公司。员工及服务范围覆盖全球。
-              </span>
-            </div>
-          </div>
-          <div class="team-item">
-            <div class="team-subtitle">
-              <span>03</span>
-            </div>
-            <div class="team-subcontent">
-              <span>
-                集团现有400余名员工，其中包括数位名合伙人、100余名资深顾问、35支专业小组。
-                外派员工超过2000人。
-              </span>
-            </div>
-          </div>
-          <div class="team-item">
-            <div class="team-subtitle">
-              <span>04</span>
-            </div>
-            <div class="team-subcontent">
-              <span>
-                集团现有400余名员工，其中包括数位名合伙人、100余名资深顾问、35支专业小组。
-                外派员工超过2000人。
-              </span>
-            </div>
+              </p>
+            </li>
+            <li class="team-item">
+              <p class="g-font g-t4 g-t-dark-black">02</p>
+              <p class="g-font g-t5 g-t-dark-black">
+                英特利普集团总部位于美国硅谷，并在纽约，西雅图，温哥华，北京，上海，深圳，武汉，新德里等城市均
+                设有分公司。员工及服务范围覆盖全球。
+              </p>
+            </li>
+            <li class="team-item">
+              <p class="g-font g-t4 g-t-dark-black">03</p>
+              <p class="g-font g-t5 g-t-dark-black">
+                集团现有400余名员工，其中包括数位名合伙人、100余名资深顾问、35支专业小组。外派员工超过2000人。
+              </p>
+            </li>
+            <li class="team-item">
+              <p class="g-font g-t4 g-t-dark-black">04</p>
+              <p class="g-font g-t5 g-t-dark-black">
+                集团现有400余名员工，其中包括数位名合伙人、100余名资深顾问、35支专业小组。外派员工超过2000人。
+              </p>
+            </li>
+          </ul>
+          <div id="team-image-con" class="col-12 col-md-7">
+            <img src="./images/background/Artboard.png" id="team-image" />
           </div>
         </div>
-        <div class="team-image">
-          <img src="./images/background/Artboard.png" />
-        </div>
       </div>
-      <div class="line"></div>
-      <div class="advantage-title">
-        <span>核心优势</span>
+      <div class="line container"></div>
+      <div class="main-title-con" class="container">
+        <p class="main-title g-font g-t3 g-t-dark-black">核心优势</p>
       </div>
-      <div class="advantage-section">
-        <div class="advantage-row">
-          <div class="advantage-item">
-            <div class="advantage-subtitle">
-              <div>
-                <img src="./images/icon/核心优势icon1.svg" />
-              </div>
-              <div>
-                <span>
+      <div class="container">
+        <div id="advantage-section" class="row">
+          <div class="advantage-item-con col-12 col-md-6 col-lg-4">
+            <div class="advantage-item container">
+              <div class="advantage-subtitle">
+                <div>
+                  <img src="./images/icon/核心优势icon1.svg" />
+                </div>
+                <p class="g-font g-t4 g-t-dark-black">
                   地域优势：<br />
                   全球布局，深耕海外
-                </span>
+                </p>
               </div>
-            </div>
-            <div class="advantage-subcontent">
-              <span>
-                集团总部位于美国硅谷，在纽约，西雅图，温哥华，伦敦，新加坡，北京，深圳，上海，武汉，
-                新德里等核心城市均设有分公司，员工及服务范围覆盖全球
-              </span>
+              <p class="g-font g-t5 g-t-dark-black">
+                集团总部位于美国硅谷，在纽约，西雅图，温哥华，伦敦，新加坡，北京，深圳，上海，武汉，新德里
+                等核心城市均设有分公司，员工及服务范围覆盖全球
+              </p>
             </div>
           </div>
-          <div class="advantage-item">
-            <div class="advantage-subtitle">
-              <div>
-                <img src="./images/icon/核心优势icon2.svg" />
-              </div>
-              <div>
-                <span>
+          <div class="advantage-item-con col-12 col-md-6 col-lg-4">
+            <div class="advantage-item container">
+              <div class="advantage-subtitle">
+                <div>
+                  <img src="./images/icon/核心优势icon2.svg" />
+                </div>
+                <p class="g-font g-t4 g-t-dark-black">
                   技术优势：<br />
                   人才大数据+人工智能
-                </span>
+                </p>
               </div>
-            </div>
-            <div class="advantage-subcontent">
-              <span>
-                每日更新已拥有的1.6亿+美国及世界精英人才数据库，集团旗下海搜科技AI技术已实现快速精准
-                的人才匹配
-              </span>
+              <p class="g-font g-t5 g-t-dark-black">
+                每日更新已拥有的1.6亿+美国及世界精英人才数据库，集团旗下海搜科技AI技术已实现快速精准的人才匹配
+              </p>
             </div>
           </div>
-          <div class="advantage-item">
-            <div class="advantage-subtitle">
-              <div>
-                <img src="./images/icon/核心优势3.svg" />
-              </div>
-              <div>
-                <span>
+          <div class="advantage-item-con col-12 col-md-6 col-lg-4">
+            <div class="advantage-item container">
+              <div class="advantage-subtitle">
+                <div>
+                  <img src="./images/icon/核心优势3.svg" />
+                </div>
+                <p class="g-font g-t4 g-t-dark-black">
                   规模优势+运营能力
-                </span>
+                </p>
               </div>
-            </div>
-            <div class="advantage-subcontent">
-              <span>
+              <p class="g-font g-t5 g-t-dark-black">
                 集团400+员工遍布全球各大核心城市，为世界一流企业提供全方位、专业、高效的人资服务及保障
-              </span>
+              </p>
             </div>
           </div>
-        </div>
-        <div class="advantage-row">
-          <div class="advantage-item">
-            <div class="advantage-subtitle">
-              <div>
-                <img src="./images/icon/核心优势icon4.svg" />
-              </div>
-              <div>
-                <span>
+          <div class="advantage-item-con col-12 col-md-6 col-lg-4">
+            <div class="advantage-item container">
+              <div class="advantage-subtitle">
+                <div>
+                  <img src="./images/icon/核心优势icon4.svg" />
+                </div>
+                <p class="g-font g-t4 g-t-dark-black">
                   高质量的团队
-                </span>
+                </p>
               </div>
-            </div>
-            <div class="advantage-subcontent">
-              <span>
+              <p class="g-font g-t5 g-t-dark-black">
                 管理及技术团队均来自全球知名高科技公司
                 硅谷技术团队150+人，其中博士30%，硕士70%
-              </span>
+              </p>
             </div>
           </div>
-          <div class="advantage-item">
-            <div class="advantage-subtitle">
-              <div>
-                <img src="./images/icon/核心优势icon5.svg" />
-              </div>
-              <div>
-                <span>
+          <div class="advantage-item-con col-12 col-md-6 col-lg-4">
+            <div class="advantage-item container">
+              <div class="advantage-subtitle">
+                <div>
+                  <img src="./images/icon/核心优势icon5.svg" />
+                </div>
+                <p class="g-font g-t4 g-t-dark-black">
                   超一流企业客户
-                </span>
+                </p>
               </div>
-            </div>
-            <div class="advantage-subcontent">
-              <span>
-                我们的客户包括Google，Apple，Amazon，Airbnb，LinkedIn，阿里，腾讯，百度，字节跳动，
-                京东等世界超一流企业
-              </span>
+              <p class="g-font g-t5 g-t-dark-black">
+                我们的客户包括Google，Apple，Amazon，Airbnb，LinkedIn，阿里，腾讯，百度，字节跳动，京东
+                等世界超一流企业
+              </p>
             </div>
           </div>
-          <div class="advantage-item">
-            <div class="advantage-subtitle">
-              <div>
-                <img src="./images/icon/核心优势icon6.svg" />
-              </div>
-              <div>
-                <span>
+          <div class="advantage-item-con col-12 col-md-6 col-lg-4">
+            <div class="advantage-item container">
+              <div class="advantage-subtitle">
+                <div>
+                  <img src="./images/icon/核心优势icon6.svg" />
+                </div>
+                <p class="g-font g-t4 g-t-dark-black">
                   一站式解决方案
-                </span>
+                </p>
               </div>
-            </div>
-            <div class="advantage-subcontent">
-              <span>
+              <p class="g-font g-t5 g-t-dark-black">
                 以灵活且具个性化的形式，专业且高效的提供全方位服务、招聘方案及用工模式，更加精准满足客户要求
-              </span>
+              </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="database-title">
-        <span>智能化全球人才数据库</span>
+      <div class="main-title-con" class="container">
+        <p class="main-title g-font g-t3 g-t-dark-black">
+          智能化全球人才数据库
+        </p>
       </div>
-      <div class="database-section">
-        <div class="database-item">
-          <img src="./images/background/智能化全球人才数据库背景图1.png" />
-          <div>
-            <span>CRM+AI+大数据技术引擎</span>
+      <div class="container">
+        <div class="row">
+          <div class="database-item-con col-12 col-lg-6">
+            <div class="database-item">
+              <img src="./images/background/智能化全球人才数据库背景图1.png" />
+              <p class="g-font g-t4 g-t-dark-black">
+                CRM+AI+大数据技术引擎
+              </p>
+            </div>
+          </div>
+          <div class="database-item-con col-12 col-lg-6">
+            <div class="database-item">
+              <img src="./images/background/智能化全球人才数据库背景图2.png" />
+              <p class="g-font g-t4 g-t-dark-black">
+                全球人才数据库
+              </p>
+            </div>
           </div>
         </div>
-        <div class="database-item">
-          <img src="./images/background/智能化全球人才数据库背景图2.png" />
-          <div>
-            <span>全球人才数据库</span>
+      </div>
+      <div class="line container"></div>
+      <div class="main-title-con" class="container">
+        <p class="main-title g-font g-t3 g-t-dark-black">服务客户</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/google.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/apple.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/amazon.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/linkedin.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/airbnb.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/snapchat.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/adobe.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/samsung.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/waymo.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/cruise.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/腾讯.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/百度.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/字节.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/京东.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/快手.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/pinterest.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/阿里.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/华为.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/didi.svg" />
+          </div>
+          <div class="client-item col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <img src="./images/logo/美团.svg" />
           </div>
         </div>
       </div>
-      <div class="line"></div>
-      <div class="client-title">
-        <span>服务客户</span>
+      <div class="line container"></div>
+      <div class="main-title-con" class="container">
+        <p class="main-title g-font g-t3 g-t-dark-black">客户好评</p>
       </div>
-      <table class="client-section">
-        <tbody>
-          <tr>
-            <td>
-              <img src="./images/logo/google.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/apple.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/amazon.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/linkedin.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/airbnb.svg" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./images/logo/snapchat.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/adobe.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/samsung.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/waymo.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/cruise.svg" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./images/logo/腾讯.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/百度.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/字节.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/京东.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/快手.svg" />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <img src="./images/logo/pinterest.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/阿里.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/华为.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/didi.svg" />
-            </td>
-            <td>
-              <img src="./images/logo/美团.svg" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="line"></div>
-      <div class="evaluation-title">
-        <span>客户好评</span>
-      </div>
-      <div class="evaluation-section">
-        <div class="evaluation-prev">
-          <a href="#evaluation-prev">
-            <img src="./images/icon/滑动左.svg" />
-          </a>
-        </div>
-        <div class="evaluation-content">
-          <img src="./images/logo/客户好评-google.svg" />
-          <div>
+      <div class="container">
+        <div id="evaluation-section">
+          <div id="evaluation-con">
             <div>
-              <span>英特利普绝对是谷歌最顶尖的灵活用工合作伙伴，</span>
+              <a href="#evaluation-prev">
+                <img src="./images/icon/滑动左.svg" />
+              </a>
+            </div>
+            <div class="evaluation-content">
+              <img src="./images/logo/客户好评-google.svg" />
+              <div>
+                <p class="g-font g-t3 g-t-dark-black">
+                  英特利普绝对是谷歌最顶尖的灵活用工合作伙伴，
+                </p>
+                <p class="g-font g-t3 g-t-dark-black">你们真的做得非常棒！</p>
+              </div>
+              <p class="g-font g-t3 g-t-dark-black">
+                - David Toste, Vendor Program Director - Google Inc
+              </p>
             </div>
             <div>
-              <span>你们真的做得非常棒！</span>
+              <a href="#evaluation-next">
+                <img src="./images/icon/滑动右.svg" />
+              </a>
             </div>
           </div>
-          <div>
-            <span>- David Toste, Vendor Program Director - Google Inc</span>
-          </div>
-        </div>
-        <div class="evaluation-next">
-          <a href="#evaluation-next">
-            <img src="./images/icon/滑动右.svg" />
-          </a>
         </div>
       </div>
       <div class="compliment-section">

@@ -144,7 +144,81 @@ li {
   align-items: center;
 }
 
-button {
+button,
+input,
+textarea {
   border: none;
   padding: 0px;
+  margin: 0px;
+}
+
+.g-font {
+  font-family: "PingFangSC", "Roboto", Arial, Helvetica, "SimHei",
+    "Microsoft YaHei", sans-serif;
+}
+
+.g-t1 {
+  font-size: 26px;
+}
+
+.g-t2 {
+  font-size: 21px;
+}
+
+.g-t3 {
+  font-size: 16px;
+}
+
+.g-t4 {
+  font-size: 14px;
+}
+
+.g-t5 {
+  font-size: 12px;
+}
+
+.g-t6 {
+  font-size: 10px;
+}
+
+.g-t-white {
+  color: #ffffff;
+}
+
+.g-t-dark-black {
+  color: #1d1d1f;
+}
+
+.g-t-light-black {
+  color: #505050;
+}
+
+.g-t-blue {
+  color: #4272d7;
+}
+
+.main-link {
+  width: 79px;
+  height: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.main-link p:hover {
+  color: #4272d7;
+}
+
+.main-title-con {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-title {
+  text-align: center;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #1d1d1f;
 }
