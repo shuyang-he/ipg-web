@@ -157,6 +157,10 @@ textarea {
   margin: 0px;
 }
 
+p {
+  line-height: 1.3;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
