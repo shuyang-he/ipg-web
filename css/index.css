@@ -641,7 +641,7 @@ body {
 }
 
 #team-image {
-  max-width: 443px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -717,8 +717,15 @@ body {
 
 #evaluation-section {
   max-width: 830px;
-  height: auto;
+  height: 313px;
   background-image: url("../images/background/客户好评背景图.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   margin: auto;
 }
 
@@ -728,67 +735,37 @@ body {
   margin: auto;
 }
 
-#evaluation-con {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.evaluation-content {
+#evaluation-content {
   width: 570px;
   height: 230px;
   opacity: 0.92;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-top: 16px;
-}
-
-.evaluation-content > div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 39px;
-}
-
-.evaluation-content > div:nth-child(2) > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.evaluation-content > div:nth-child(2) > div > span {
-  font-family: PingFangSC;
-  font-size: 16px;
-  font-weight: 600;
-  color: #1d1d1f;
+#evaluation-content p {
+  text-align: center;
 }
 
-.evaluation-content > div:nth-child(3) {
+#evaluation-content > div:nth-child(2) {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-top: 16px;
+  justify-content: space-between;
 }
 
-.evaluation-content > div:nth-child(3) > span {
+#evaluation-content > p:nth-child(3) {
   font-family: Roboto;
-  font-size: 14px;
-  font-weight: 900;
-  color: #1d1d1f;
 }
 
-.compliment-section {
+#compliment-section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 76px;
+  margin-top: 50px;
 }
 
 .compliment-item {
@@ -801,206 +778,83 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 .compliment-item > div:nth-child(1) {
-  width: 110px;
-  height: 55px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.compliment-item span {
-  font-family: PingFangSC;
-  font-size: 14px;
-  font-weight: 500;
+.compliment-item p {
   text-align: center;
-  color: #505050;
 }
 
-.footer {
+#footer {
   width: 100%;
   display: flex;
   align-self: flex-end;
-  background-image: url("../images/background/footer背景.png");
-  background-size: 100%;
-}
-
-.footer-section {
-  margin: auto;
-  margin-top: 38px;
-  display: flex;
   flex-direction: column;
+  align-items: center;
+  background-image: url("../images/background/footer背景.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 38px;
 }
 
-.footer-logo {
+#footer-logo {
   height: 43px;
   margin-bottom: 6px;
 }
 
-.footer-logo > img {
+#footer-logo > img {
   width: 100px;
   height: 43px;
 }
 
 .footer-line {
-  display: flex;
-  align-self: center;
-  width: 831px;
   border: solid 1px #ffffff;
 }
 
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  margin-top: 25px;
-  margin-bottom: 200px;
-}
-
-.footer-follow {
+#footer-follow {
+  height: 300px;
   display: flex;
   flex-direction: column;
-  margin-right: 156px;
+  justify-content: space-evenly;
 }
 
-.footer-follow-title {
-  margin-bottom: 24px;
-}
-
-.footer-follow-title > span {
-  font-family: PingFangSC;
-  font-size: 14px;
-  font-weight: 600;
-  color: #ffffff;
+#footer-follow-content {
+  display: flex;
+  flex-basis: 60%;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .footer-follow-row {
   display: flex;
   flex-direction: row;
-  margin-bottom: 27px;
+  justify-content: space-between;
 }
 
-.footer-follow-item {
-  margin-right: 28px;
-}
-
-.footer-solution {
+.footer-item {
+  height: 300px;
   display: flex;
   flex-direction: column;
-  margin-right: 50px;
+  justify-content: space-evenly;
 }
 
-.footer-solution-title {
-  margin-bottom: 24px;
-}
-
-.footer-solution-title > span {
-  font-family: PingFangSC;
-  font-size: 14px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.footer-solution-content {
+.footer-item-content {
   display: flex;
+  flex-basis: 60%;
   flex-direction: column;
 }
 
-.footer-solution-content span {
-  font-family: PingFangSC;
-  font-size: 10px;
-  line-height: 2.4;
-  color: #ffffff;
-}
-
-.footer-observe {
-  display: flex;
-  flex-direction: column;
-  margin-right: 50px;
-}
-
-.footer-observe-title {
-  margin-bottom: 24px;
-}
-
-.footer-observe-title > span {
-  font-family: PingFangSC;
-  font-size: 14px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.footer-observe-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-observe-content span {
-  font-family: PingFangSC;
-  font-size: 10px;
-  line-height: 2.4;
-  color: #ffffff;
-}
-
-.footer-news {
-  display: flex;
-  flex-direction: column;
-  margin-right: 50px;
-}
-
-.footer-news-title {
-  margin-bottom: 24px;
-}
-
-.footer-news-title > span {
-  font-family: PingFangSC;
-  font-size: 14px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.footer-news-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-news-content span {
-  font-family: PingFangSC;
-  font-size: 10px;
-  line-height: 2.4;
-  color: #ffffff;
-}
-
-.footer-about {
-  display: flex;
-  flex-direction: column;
-  margin-right: 50px;
-}
-
-.footer-about-title {
-  margin-bottom: 24px;
-}
-
-.footer-about-title > span {
-  font-family: PingFangSC;
-  font-size: 14px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.footer-about-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-about-content span {
-  font-family: PingFangSC;
-  font-size: 10px;
-  line-height: 2.4;
-  color: #ffffff;
+.footer-item-content > p {
+  margin-bottom: 14px;
 }
 
 @media screen and (max-width: 992px) {

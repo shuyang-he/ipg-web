@@ -16,6 +16,11 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <script
@@ -33,6 +38,8 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="./js/index.js" defer></script>
     <title>ipg中文网站</title>
   </head>
@@ -453,23 +460,65 @@
           </div>
         </div>
       </div>
-      <div id="top-board" id="top">
-        <div id="top-board-content" class="container">
-          <p class="g-font g-t1 g-t-white">
-            英特利普集团<br />
-            全球综合人才解决方案供应商
-          </p>
-          <p class="g-font g-t3 g-t-white">
-            IntelliPro Group Inc.<br />
-            Global Integrated Talent Solution Provider
-          </p>
-          <div>
-            <a href="#contact" class="main-link">
-              <p class="g-font g-t4 g-t-white">联系我们</p>
-              <img src="./images/icon/箭头.svg" />
-            </a>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div id="top-board" id="top" class="swiper-slide">
+            <div id="top-board-content" class="container">
+              <p class="g-font g-t1 g-t-white">
+                英特利普集团<br />
+                全球综合人才解决方案供应商
+              </p>
+              <p class="g-font g-t3 g-t-white">
+                IntelliPro Group Inc.<br />
+                Global Integrated Talent Solution Provider
+              </p>
+              <div>
+                <a href="#contact" class="main-link">
+                  <p class="g-font g-t4 g-t-white">联系我们</p>
+                  <img src="./images/icon/箭头.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="top-board" id="top" class="swiper-slide">
+            <div id="top-board-content" class="container">
+              <p class="g-font g-t1 g-t-white">
+                英特利普集团<br />
+                全球综合人才解决方案供应商
+              </p>
+              <p class="g-font g-t3 g-t-white">
+                IntelliPro Group Inc.<br />
+                Global Integrated Talent Solution Provider
+              </p>
+              <div>
+                <a href="#contact" class="main-link">
+                  <p class="g-font g-t4 g-t-white">联系我们</p>
+                  <img src="./images/icon/箭头.svg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="top-board" id="top" class="swiper-slide">
+            <div id="top-board-content" class="container">
+              <p class="g-font g-t1 g-t-white">
+                英特利普集团<br />
+                全球综合人才解决方案供应商
+              </p>
+              <p class="g-font g-t3 g-t-white">
+                IntelliPro Group Inc.<br />
+                Global Integrated Talent Solution Provider
+              </p>
+              <div>
+                <a href="#contact" class="main-link">
+                  <p class="g-font g-t4 g-t-white">联系我们</p>
+                  <img src="./images/icon/箭头.svg" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
       <div id="main-content-1" class="container">
         <p class="g-font g-t2 g-t-dark-black">
@@ -910,195 +959,170 @@
       </div>
       <div class="container">
         <div id="evaluation-section">
-          <div id="evaluation-con">
+          <div>
+            <a href="#evaluation-prev">
+              <img src="./images/icon/滑动左.svg" />
+            </a>
+          </div>
+          <div id="evaluation-content">
+            <img src="./images/logo/客户好评-google.svg" />
             <div>
-              <a href="#evaluation-prev">
-                <img src="./images/icon/滑动左.svg" />
-              </a>
-            </div>
-            <div class="evaluation-content">
-              <img src="./images/logo/客户好评-google.svg" />
-              <div>
-                <p class="g-font g-t3 g-t-dark-black">
-                  英特利普绝对是谷歌最顶尖的灵活用工合作伙伴，
-                </p>
-                <p class="g-font g-t3 g-t-dark-black">你们真的做得非常棒！</p>
-              </div>
               <p class="g-font g-t3 g-t-dark-black">
-                - David Toste, Vendor Program Director - Google Inc
+                英特利普绝对是谷歌最顶尖的灵活用工合作伙伴，
               </p>
+              <p class="g-font g-t3 g-t-dark-black">你们真的做得非常棒！</p>
             </div>
-            <div>
-              <a href="#evaluation-next">
-                <img src="./images/icon/滑动右.svg" />
-              </a>
+            <p class="g-t3 g-t-dark-black">
+              - David Toste, Vendor Program Director - Google Inc
+            </p>
+          </div>
+          <div>
+            <a href="#evaluation-next">
+              <img src="./images/icon/滑动右.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="compliment-section" class="row">
+          <div class="col-12 col-md-2">
+            <div class="compliment-item">
+              <div>
+                <img src="./images/logo/灵活用工equinix.svg" />
+              </div>
+              <div>
+                <p class="g-font g-t4 g-t-light-black">灵活用工</p>
+                <p class="g-font g-t4 g-t-light-black">Top1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="compliment-item">
+              <div>
+                <img src="./images/logo/灵活用工领英.svg" />
+              </div>
+              <div>
+                <p class="g-font g-t4 g-t-light-black">灵活用工</p>
+                <p class="g-font g-t4 g-t-light-black">Top5</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="compliment-item">
+              <div>
+                <img src="./images/logo/灵活用工adobe.svg" />
+              </div>
+              <div>
+                <p class="g-font g-t4 g-t-light-black">灵活用工</p>
+                <p class="g-font g-t4 g-t-light-black">Top3</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="compliment-item">
+              <div>
+                <img src="./images/logo/google.svg" />
+              </div>
+              <div>
+                <p class="g-font g-t4 g-t-light-black">灵活用工</p>
+                <p class="g-font g-t4 g-t-light-black">Top5</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-2">
+            <div class="compliment-item">
+              <div>
+                <img src="./images/logo/华为.svg" />
+              </div>
+              <div>
+                <p class="g-font g-t4 g-t-light-black">灵活用工</p>
+                <p class="g-font g-t4 g-t-light-black">Top1</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="compliment-section">
-        <div class="compliment-item">
-          <div>
-            <img src="./images/logo/灵活用工equinix.svg" />
-          </div>
-          <div>
-            <span>灵活用工</span>
-          </div>
-          <div>
-            <span>Top1</span>
-          </div>
-        </div>
-        <div class="compliment-item">
-          <div>
-            <img src="./images/logo/灵活用工领英.svg" />
-          </div>
-          <div>
-            <span>灵活用工</span>
-          </div>
-          <div>
-            <span>Top5</span>
-          </div>
-        </div>
-        <div class="compliment-item">
-          <div>
-            <img src="./images/logo/灵活用工adobe.svg" />
-          </div>
-          <div>
-            <span>灵活用工</span>
-          </div>
-          <div>
-            <span>Top3</span>
-          </div>
-        </div>
-        <div class="compliment-item">
-          <div>
-            <img src="./images/logo/google.svg" />
-          </div>
-          <div>
-            <span>灵活用工</span>
-          </div>
-          <div>
-            <span>Top5</span>
-          </div>
-        </div>
-        <div class="compliment-item">
-          <div>
-            <img src="./images/logo/华为.svg" />
-          </div>
-          <div>
-            <span>灵活用工</span>
-          </div>
-          <div>
-            <span>Top1</span>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="footer-section">
-          <div class="footer-logo">
+      <div id="footer">
+        <div class="container">
+          <div id="footer-logo">
             <img src="./images/logo/mainpage.png" />
           </div>
-          <div class="footer-line"></div>
-          <div class="footer-content">
-            <div class="footer-follow">
-              <div class="footer-follow-title">
-                <span>关注我们</span>
-              </div>
-              <div class="footer-follow-row">
-                <div class="footer-follow-item">
-                  <a href="#footer-wechat">
-                    <img src="./images/icon/微信icon.svg" />
-                  </a>
-                </div>
-                <div class="footer-follow-item">
-                  <a href="#footer-weibo">
-                    <img src="./images/icon/微博icon.svg" />
-                  </a>
-                </div>
-              </div>
-              <div class="footer-follow-row">
-                <div class="footer-follow-item">
-                  <a href="#footer-linkedin">
-                    <img src="./images/icon/领英icon.svg" />
-                  </a>
-                </div>
-                <div class="footer-follow-item">
-                  <a href="#footer-facebook">
-                    <img src="./images/icon/facebookicon.svg" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="footer-solution">
-              <div class="footer-solution-title">
-                <span>解决方案</span>
-              </div>
-              <div class="footer-solution-content">
-                <div>
-                  <span>灵活用工</span>
-                </div>
-                <div>
-                  <span>高端人才寻访</span>
-                </div>
-                <div>
-                  <span>招聘流程外包</span>
-                </div>
-                <div>
-                  <span>海外校招</span>
-                </div>
-                <div>
-                  <span>出海解决方案</span>
-                </div>
-                <div>
-                  <span>管理咨询</span>
+        </div>
+        <div class="line footer-line container"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-2">
+              <div id="footer-follow">
+                <p class="g-font g-t4 g-t-white">关注我们</p>
+                <div id="footer-follow-content">
+                  <div class="footer-follow-row">
+                    <div class="footer-follow-item">
+                      <a href="#footer-wechat">
+                        <img src="./images/icon/微信icon.svg" />
+                      </a>
+                    </div>
+                    <div class="footer-follow-item">
+                      <a href="#footer-weibo">
+                        <img src="./images/icon/微博icon.svg" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="footer-follow-row">
+                    <div class="footer-follow-item">
+                      <a href="#footer-linkedin">
+                        <img src="./images/icon/领英icon.svg" />
+                      </a>
+                    </div>
+                    <div class="footer-follow-item">
+                      <a href="#footer-facebook">
+                        <img src="./images/icon/facebookicon.svg" />
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="footer-observe">
-              <div class="footer-observe-title">
-                <span>行业洞察</span>
-              </div>
-              <div class="footer-observe-content">
-                <div>
-                  <span>调研报告</span>
-                </div>
-                <div>
-                  <span>白皮书</span>
-                </div>
-                <div>
-                  <span>IntelliPro观点</span>
-                </div>
-                <div>
-                  <span>SVLC 美国硅谷领导力社区</span>
+            <div class="col-12 col-md-2">
+              <div class="footer-item">
+                <p class="g-font g-t4 g-t-white">解决方案</p>
+                <div class="footer-item-content">
+                  <p class="g-font g-t5 g-t-white">灵活用工</p>
+                  <p class="g-font g-t5 g-t-white">高端人才寻访</p>
+                  <p class="g-font g-t5 g-t-white">招聘流程外包</p>
+                  <p class="g-font g-t5 g-t-white">海外校招</p>
+                  <p class="g-font g-t5 g-t-white">出海解决方案</p>
+                  <p class="g-font g-t5 g-t-white">管理咨询</p>
                 </div>
               </div>
             </div>
-            <div class="footer-news">
-              <div class="footer-news-title">
-                <span>新闻动态</span>
-              </div>
-              <div class="footer-news-content">
-                <div>
-                  <span>活动中心</span>
-                </div>
-                <div>
-                  <span>行业资讯</span>
+            <div class="col-12 col-md-2">
+              <div class="footer-item">
+                <p class="g-font g-t4 g-t-white">行业洞察</p>
+                <div class="footer-item-content">
+                  <p class="g-font g-t5 g-t-white">调研报告</p>
+                  <p class="g-font g-t5 g-t-white">白皮书</p>
+                  <p class="g-font g-t5 g-t-white">招聘流程外包</p>
+                  <p class="g-font g-t5 g-t-white">IntelliPro观点</p>
+                  <p class="g-font g-t5 g-t-white">SVLC 美国硅谷领导力社区</p>
                 </div>
               </div>
             </div>
-            <div class="footer-about">
-              <div class="footer-about-title">
-                <span>关于我们</span>
+            <div class="col-12 col-md-2">
+              <div class="footer-item">
+                <p class="g-font g-t4 g-t-white">解决方案</p>
+                <div class="footer-item-content">
+                  <p class="g-font g-t5 g-t-white">活动中心</p>
+                  <p class="g-font g-t5 g-t-white">行业资讯</p>
+                </div>
               </div>
-              <div class="footer-about-content">
-                <div>
-                  <span>公司简介</span>
-                </div>
-                <div>
-                  <span>加入我们</span>
-                </div>
-                <div>
-                  <span>联系我们</span>
+            </div>
+            <div class="col-12 col-md-2">
+              <div class="footer-item">
+                <p class="g-font g-t4 g-t-white">解决方案</p>
+                <div class="footer-item-content">
+                  <p class="g-font g-t5 g-t-white">公司简介</p>
+                  <p class="g-font g-t5 g-t-white">加入我们</p>
+                  <p class="g-font g-t5 g-t-white">联系我们</p>
                 </div>
               </div>
             </div>

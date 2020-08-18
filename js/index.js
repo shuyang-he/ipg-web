@@ -43,6 +43,14 @@
     false
   );
 
+  const topSwiper = new Swiper(".swiper-container", {
+    direction: "horizontal",
+    loop: false,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
   // nav-links-home
   document.querySelector("#nav-links-home").addEventListener(
     "mouseover",

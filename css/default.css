@@ -152,6 +152,11 @@ textarea {
   margin: 0px;
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
 .g-font {
   font-family: "PingFangSC", "Roboto", Arial, Helvetica, "SimHei",
     "Microsoft YaHei", sans-serif;
