@@ -491,6 +491,10 @@ body {
   flex-basis: 40%;
 }
 
+#about-us > div:nth-child(2) p {
+  /* line-height: 1.5; */
+}
+
 #solution-section {
   display: flex;
   flex-direction: row;
@@ -582,7 +586,7 @@ body {
 .achievement-item-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #team-section {

@@ -144,11 +144,16 @@ li {
   align-items: center;
 }
 
-button,
+button {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
 input,
 textarea {
   border: none;
-  padding: 0px;
+  padding: 5px;
   margin: 0px;
 }
 
