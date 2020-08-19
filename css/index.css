@@ -688,6 +688,10 @@ body {
   height: 25px;
 }
 
+.advantage-subtitle p {
+  border-bottom: solid 1px #1f40e6;
+}
+
 .database-item-con {
   display: flex;
   align-items: stretch;
@@ -917,5 +921,11 @@ body {
 
   .footer-item {
     display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
   }
 }
