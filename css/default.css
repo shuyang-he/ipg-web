@@ -148,6 +148,7 @@ button {
   border: none;
   padding: 0px;
   margin: 0px;
+  background-color: transparent;
 }
 
 input,
