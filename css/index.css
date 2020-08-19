@@ -239,6 +239,10 @@ body {
   flex-grow: 1;
 }
 
+.side-main-link-container span:hover {
+  color: #4272d7;
+}
+
 .side-main-link-container > button {
   display: flex;
   align-items: center;

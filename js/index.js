@@ -11,6 +11,68 @@
   let sideNewsShow = false;
   let sideAboutShow = false;
 
+  function linkChange(linkSelector, dropSelector) {
+    document.querySelector(linkSelector).addEventListener(
+      "mouseover",
+      (event) => {
+        if (
+          dropSelector !== null &&
+          dropSelector !== undefined &&
+          dropSelector !== ""
+        ) {
+          const navDrop = document.querySelector(dropSelector);
+          navDrop.style.display = "flex";
+        }
+        document.querySelector(linkSelector + " > span").style.color = gTBlue;
+      },
+      false
+    );
+
+    document.querySelector(linkSelector).addEventListener(
+      "mouseout",
+      (event) => {
+        if (
+          dropSelector !== null &&
+          dropSelector !== undefined &&
+          dropSelector !== ""
+        ) {
+          const navDrop = document.querySelector(dropSelector);
+          navDrop.style.display = "none";
+        }
+        if (window.scrollY >= 500) {
+          document.querySelector(
+            linkSelector + " > span"
+          ).style.color = gTLightBlack;
+        } else {
+          document.querySelector(
+            linkSelector + " > span"
+          ).style.color = gTWhite;
+        }
+      },
+      false
+    );
+  }
+
+  function dropChange(dropSelector) {
+    document.querySelector(dropSelector).addEventListener(
+      "mouseover",
+      (event) => {
+        const navDrop = document.querySelector(dropSelector);
+        navDrop.style.display = "flex";
+      },
+      false
+    );
+
+    document.querySelector(dropSelector).addEventListener(
+      "mouseout",
+      (event) => {
+        const navDrop = document.querySelector(dropSelector);
+        navDrop.style.display = "none";
+      },
+      false
+    );
+  }
+
   window.addEventListener(
     "scroll",
     (event) => {
@@ -204,263 +266,29 @@
   });
 
   // nav-links-home
-  document.querySelector("#nav-links-home").addEventListener(
-    "mouseover",
-    (event) => {
-      document.querySelector("#nav-links-home > span").style.color = gTBlue;
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-home").addEventListener(
-    "mouseout",
-    (event) => {
-      if (window.scrollY >= 500) {
-        document.querySelector(
-          "#nav-links-home > span"
-        ).style.color = gTLightBlack;
-      } else {
-        document.querySelector("#nav-links-home > span").style.color = gTWhite;
-      }
-    },
-    false
-  );
+  linkChange("#nav-links-home");
 
   // nav-links-solution
-  document.querySelector("#nav-links-solution").addEventListener(
-    "mouseover",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-solution-drop");
-      navDrop.style.display = "flex";
-      document.querySelector("#nav-links-solution > span").style.color = gTBlue;
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-solution").addEventListener(
-    "mouseout",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-solution-drop");
-      navDrop.style.display = "none";
-      if (window.scrollY >= 500) {
-        document.querySelector(
-          "#nav-links-solution > span"
-        ).style.color = gTLightBlack;
-      } else {
-        document.querySelector(
-          "#nav-links-solution > span"
-        ).style.color = gTWhite;
-      }
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-solution-drop").addEventListener(
-    "mouseover",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-solution-drop");
-      navDrop.style.display = "flex";
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-solution-drop").addEventListener(
-    "mouseout",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-solution-drop");
-      navDrop.style.display = "none";
-    },
-    false
-  );
+  linkChange("#nav-links-solution", "#nav-links-solution-drop");
+  dropChange("#nav-links-solution-drop");
 
   // nav-links-jobs
-  document.querySelector("#nav-links-jobs").addEventListener(
-    "mouseover",
-    (event) => {
-      document.querySelector("#nav-links-jobs > span").style.color = gTBlue;
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-jobs").addEventListener(
-    "mouseout",
-    (event) => {
-      if (window.scrollY >= 500) {
-        document.querySelector(
-          "#nav-links-jobs > span"
-        ).style.color = gTLightBlack;
-      } else {
-        document.querySelector("#nav-links-jobs > span").style.color = gTWhite;
-      }
-    },
-    false
-  );
+  linkChange("#nav-links-jobs");
 
   // nav-links-business
-  document.querySelector("#nav-links-business").addEventListener(
-    "mouseover",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-business-drop");
-      navDrop.style.display = "flex";
-      document.querySelector("#nav-links-business > span").style.color = gTBlue;
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-business").addEventListener(
-    "mouseout",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-business-drop");
-      navDrop.style.display = "none";
-      if (window.scrollY >= 500) {
-        document.querySelector(
-          "#nav-links-business > span"
-        ).style.color = gTLightBlack;
-      } else {
-        document.querySelector(
-          "#nav-links-business > span"
-        ).style.color = gTWhite;
-      }
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-business-drop").addEventListener(
-    "mouseover",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-business-drop");
-      navDrop.style.display = "flex";
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-business-drop").addEventListener(
-    "mouseout",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-business-drop");
-      navDrop.style.display = "none";
-    },
-    false
-  );
+  linkChange("#nav-links-business", "#nav-links-business-drop");
+  dropChange("#nav-links-business-drop");
 
   // nav-links-education
-  document.querySelector("#nav-links-education").addEventListener(
-    "mouseover",
-    (event) => {
-      document.querySelector(
-        "#nav-links-education > span"
-      ).style.color = gTBlue;
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-education").addEventListener(
-    "mouseout",
-    (event) => {
-      if (window.scrollY >= 500) {
-        document.querySelector(
-          "#nav-links-education > span"
-        ).style.color = gTLightBlack;
-      } else {
-        document.querySelector(
-          "#nav-links-education > span"
-        ).style.color = gTWhite;
-      }
-    },
-    false
-  );
+  linkChange("#nav-links-education");
 
   // nav-links-news
-  document.querySelector("#nav-links-news").addEventListener(
-    "mouseover",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-news-drop");
-      navDrop.style.display = "flex";
-      document.querySelector("#nav-links-news > span").style.color = gTBlue;
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-news").addEventListener(
-    "mouseout",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-news-drop");
-      navDrop.style.display = "none";
-      if (window.scrollY >= 500) {
-        document.querySelector(
-          "#nav-links-news > span"
-        ).style.color = gTLightBlack;
-      } else {
-        document.querySelector("#nav-links-news > span").style.color = gTWhite;
-      }
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-news-drop").addEventListener(
-    "mouseover",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-news-drop");
-      navDrop.style.display = "flex";
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-news-drop").addEventListener(
-    "mouseout",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-news-drop");
-      navDrop.style.display = "none";
-    },
-    false
-  );
+  linkChange("#nav-links-news", "#nav-links-news-drop");
+  dropChange("#nav-links-news-drop");
 
   // nav-links-about-us
-  document.querySelector("#nav-links-about-us").addEventListener(
-    "mouseover",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-about-us-drop");
-      navDrop.style.display = "flex";
-      document.querySelector("#nav-links-about-us > span").style.color = gTBlue;
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-about-us").addEventListener(
-    "mouseout",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-about-us-drop");
-      navDrop.style.display = "none";
-      if (window.scrollY >= 500) {
-        document.querySelector(
-          "#nav-links-about-us > span"
-        ).style.color = gTLightBlack;
-      } else {
-        document.querySelector(
-          "#nav-links-about-us > span"
-        ).style.color = gTWhite;
-      }
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-about-us-drop").addEventListener(
-    "mouseover",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-about-us-drop");
-      navDrop.style.display = "flex";
-    },
-    false
-  );
-
-  document.querySelector("#nav-links-about-us-drop").addEventListener(
-    "mouseout",
-    (event) => {
-      const navDrop = document.querySelector("#nav-links-about-us-drop");
-      navDrop.style.display = "none";
-    },
-    false
-  );
+  linkChange("#nav-links-about-us", "#nav-links-about-us-drop");
+  dropChange("#nav-links-about-us-drop");
 
   document.querySelector("#nav-icon-open").addEventListener(
     "click",
@@ -503,7 +331,7 @@
       }
       sideSolutionShow = false;
       sideBusinessShow = false;
-      sideJobsShow = false;
+      sideNewsShow = false;
       sideAboutShow = false;
     },
     false
@@ -528,17 +356,55 @@
           );
         }
       } else {
-        $("#side-nav-links-solution-drop").css("display", "flex");
-        sideSolutionShow = true;
         if (window.scrollY >= 500) {
+          $("#side-nav-links-solution-drop").css("display", "flex");
+          sideSolutionShow = true;
           $("#side-solution-button > img").attr(
             "src",
             "./images/icon/收起-black.svg"
           );
+          $("#side-nav-links-business-drop").css("display", "none");
+          sideBusinessShow = false;
+          $("#side-business-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
+          $("#side-nav-links-news-drop").css("display", "none");
+          sideNewsShow = false;
+          $("#side-news-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
+          $("#side-nav-links-about-us-drop").css("display", "none");
+          sideAboutShow = false;
+          $("#side-about-us-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
         } else {
+          $("#side-nav-links-solution-drop").css("display", "flex");
+          sideSolutionShow = true;
           $("#side-solution-button > img").attr(
             "src",
             "./images/icon/收起-white.svg"
+          );
+          $("#side-nav-links-business-drop").css("display", "none");
+          sideBusinessShow = false;
+          $("#side-business-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
+          );
+          $("#side-nav-links-news-drop").css("display", "none");
+          sideNewsShow = false;
+          $("#side-news-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
+          );
+          $("#side-nav-links-about-us-drop").css("display", "none");
+          sideAboutShow = false;
+          $("#side-about-us-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
           );
         }
       }
@@ -563,17 +429,55 @@
           );
         }
       } else {
-        $("#side-nav-links-business-drop").css("display", "flex");
-        sideBusinessShow = true;
         if (window.scrollY >= 500) {
+          $("#side-nav-links-solution-drop").css("display", "flex");
+          sideSolutionShow = false;
+          $("#side-solution-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
+          $("#side-nav-links-business-drop").css("display", "none");
+          sideBusinessShow = true;
           $("#side-business-button > img").attr(
             "src",
             "./images/icon/收起-black.svg"
           );
+          $("#side-nav-links-news-drop").css("display", "none");
+          sideNewsShow = false;
+          $("#side-news-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
+          $("#side-nav-links-about-us-drop").css("display", "none");
+          sideAboutShow = false;
+          $("#side-about-us-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
         } else {
+          $("#side-nav-links-solution-drop").css("display", "flex");
+          sideSolutionShow = false;
+          $("#side-solution-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
+          );
+          $("#side-nav-links-business-drop").css("display", "none");
+          sideBusinessShow = true;
           $("#side-business-button > img").attr(
             "src",
             "./images/icon/收起-white.svg"
+          );
+          $("#side-nav-links-news-drop").css("display", "none");
+          sideNewsShow = false;
+          $("#side-news-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
+          );
+          $("#side-nav-links-about-us-drop").css("display", "none");
+          sideAboutShow = false;
+          $("#side-about-us-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
           );
         }
       }
@@ -598,17 +502,55 @@
           );
         }
       } else {
-        $("#side-nav-links-news-drop").css("display", "flex");
-        sideNewsShow = true;
         if (window.scrollY >= 500) {
+          $("#side-nav-links-solution-drop").css("display", "flex");
+          sideSolutionShow = false;
+          $("#side-solution-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
+          $("#side-nav-links-business-drop").css("display", "none");
+          sideBusinessShow = false;
+          $("#side-business-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
+          $("#side-nav-links-news-drop").css("display", "none");
+          sideNewsShow = true;
           $("#side-news-button > img").attr(
             "src",
             "./images/icon/收起-black.svg"
           );
+          $("#side-nav-links-about-us-drop").css("display", "none");
+          sideAboutShow = false;
+          $("#side-about-us-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
         } else {
+          $("#side-nav-links-solution-drop").css("display", "flex");
+          sideSolutionShow = false;
+          $("#side-solution-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
+          );
+          $("#side-nav-links-business-drop").css("display", "none");
+          sideBusinessShow = false;
+          $("#side-business-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
+          );
+          $("#side-nav-links-news-drop").css("display", "none");
+          sideNewsShow = true;
           $("#side-news-button > img").attr(
             "src",
             "./images/icon/收起-white.svg"
+          );
+          $("#side-nav-links-about-us-drop").css("display", "none");
+          sideAboutShow = false;
+          $("#side-about-us-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
           );
         }
       }
@@ -633,14 +575,52 @@
           );
         }
       } else {
-        $("#side-nav-links-about-us-drop").css("display", "flex");
-        sideAboutShow = true;
         if (window.scrollY >= 500) {
+          $("#side-nav-links-solution-drop").css("display", "flex");
+          sideSolutionShow = false;
+          $("#side-solution-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
+          $("#side-nav-links-business-drop").css("display", "none");
+          sideBusinessShow = false;
+          $("#side-business-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
+          $("#side-nav-links-news-drop").css("display", "none");
+          sideNewsShow = false;
+          $("#side-news-button > img").attr(
+            "src",
+            "./images/icon/展开-black.svg"
+          );
+          $("#side-nav-links-about-us-drop").css("display", "none");
+          sideAboutShow = true;
           $("#side-about-us-button > img").attr(
             "src",
             "./images/icon/收起-black.svg"
           );
         } else {
+          $("#side-nav-links-solution-drop").css("display", "flex");
+          sideSolutionShow = false;
+          $("#side-solution-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
+          );
+          $("#side-nav-links-business-drop").css("display", "none");
+          sideBusinessShow = false;
+          $("#side-business-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
+          );
+          $("#side-nav-links-news-drop").css("display", "none");
+          sideNewsShow = false;
+          $("#side-news-button > img").attr(
+            "src",
+            "./images/icon/展开-white.svg"
+          );
+          $("#side-nav-links-about-us-drop").css("display", "none");
+          sideAboutShow = true;
           $("#side-about-us-button > img").attr(
             "src",
             "./images/icon/收起-white.svg"
