@@ -237,3 +237,19 @@ p {
   padding-bottom: 3px;
   border-bottom: 2px solid #1d1d1f;
 }
+
+.img-show {
+  display: block;
+}
+
+.img-none {
+  display: none;
+}
+
+.div-show {
+  display: flex;
+}
+
+.div-none {
+  display: none;
+}

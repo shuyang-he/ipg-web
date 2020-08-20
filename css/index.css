@@ -116,7 +116,7 @@ body {
   margin-right: 25px;
 }
 
-#main-page {
+#main-page-container img {
   width: 105px;
   height: 45px;
 }
@@ -176,7 +176,7 @@ body {
 
 #side-navigation-wrap {
   position: relative;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 #side-main-page-container {
