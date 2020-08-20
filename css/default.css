@@ -238,6 +238,22 @@ p {
   border-bottom: 2px solid #1d1d1f;
 }
 
+#navigation-wrap .active img.img-show {
+  display: none;
+}
+
+#navigation-wrap .active img.img-none {
+  display: block;
+}
+
+#side-nav-links div.active img.img-show {
+  display: none;
+}
+
+#side-nav-links div.active img.img-none {
+  display: block;
+}
+
 .img-show {
   display: block;
 }
