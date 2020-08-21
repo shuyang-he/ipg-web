@@ -100,19 +100,6 @@
     }
   );
 
-  $("#nav-links > li > a").hover(
-    function () {
-      $(this).css("color", gTBlue);
-    },
-    function () {
-      if (window.scrollY >= 500) {
-        $(this).css("color", gTLightBlack);
-      } else {
-        $(this).css("color", gTWhite);
-      }
-    }
-  );
-
   document.querySelector("#nav-icon-open").addEventListener(
     "click",
     (event) => {
