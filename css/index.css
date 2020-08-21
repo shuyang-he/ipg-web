@@ -83,7 +83,6 @@ body {
 }
 
 #nav-links > li > a:hover {
-  color: #4272d7;
   border-bottom: #4272d7 solid 8px;
   border-top: transparent solid 8px;
 }
