@@ -122,21 +122,6 @@ body {
   height: 45px;
 }
 
-#nav-icon button {
-  width: 24px;
-  height: 24px;
-  background-color: transparent;
-}
-
-#nav-icon {
-  display: none;
-}
-
-#nav-icon img {
-  width: 20px;
-  height: 20px;
-}
-
 #nav-icon-close {
   display: none;
 }
